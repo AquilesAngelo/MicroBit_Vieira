@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rede do Bem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cloud c1"></div>
+<div class="cloud c2"></div>
+<div class="cloud c3"></div>
+<div class="hills"></div>
+
+<div class="app">
+  <header class="topbar">
+    <div class="logo"><i></i><i></i><i></i><span>Rede do Bem</span></div>
+    <div class="top-actions">
+      <button id="replayBtn" class="chip-btn" type="button" hidden>Ouvir de novo (R)</button>
+      <button id="soundBtn" class="chip-btn" type="button">Som: ligado</button>
+      <button id="connBtn" class="chip-btn" type="button">Conectar por USB</button>
+      <button id="bleBtn" class="chip-btn" type="button">Conectar por Bluetooth</button>
+    </div>
+  </header>
+  <div id="statusLine" class="status-line">Sem micro:bit conectado — os botões na tela e o teclado (A e B) funcionam igual.</div>
+
+  <main class="card">
+    <div id="stage" class="stage"></div>
+  </main>
+
+  <section class="dock">
+    <div class="board">
+      <div id="ledGrid" class="led-grid"></div>
+      <div class="board-btns">
+        <button id="btnA" class="board-btn a" type="button">A</button>
+        <button id="btnB" class="board-btn b" type="button">B</button>
+      </div>
+    </div>
+    <p class="dock-hint">Controle do micro:bit<br>A troca a opção · B confirma</p>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
